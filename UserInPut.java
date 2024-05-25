@@ -20,8 +20,5 @@ public class UserInPut {
         System.out.println("name is :" + name);
         System.out.println("age is :" + age);
         System.out.println("gender is :" + gender);
-        
-
     }
-
 }
