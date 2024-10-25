@@ -1,5 +1,5 @@
 /*class object and method related */
-class Animal
+public class Animal_1
 {
   public void eat()
   {
@@ -9,7 +9,7 @@ class Animal
   public static void main(String[] args)
   {
      System.out.println("1");
-     Animal buzo = new Animal();
+     Animal_1 buzo = new Animal_1();
      buzo.eat();
   }
 }
