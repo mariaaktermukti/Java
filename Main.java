@@ -1,12 +1,9 @@
-class Main {
-
+public class Main {
     public static void main(String[] args) {
-      
-      int first = 10;
-      int second = 20;
-  
-      // add two numbers
-      int sum = first + second;
-      System.out.println(first + " + " + second + " = "  + sum);
+        // Create an Employee object using the constructor
+        Employee emp1 = new Employee(101, "Alice");
+
+        // Display employee info
+        emp1.displayInfo(); // Output: Employee ID: 101, Name: Alice
     }
-  }
+}
