@@ -1,10 +1,35 @@
+// Main.java
+class Dog extends Animal {
+
+//    void eat() {
+//        System.out.println("I am eating");
+//    }
+//
+//    void call(String name){
+//        System.out.println("Hello I am calling "+name);
+//    }
+
+
+    void bark() {
+        System.out.println("I am barking");
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-        // Using No-Argument Constructor (User-Defined)
-        Animal animal1 = new Animal(); // This will call the no-argument constructor
+        // Creating an instance of Dog
+        Dog dog = new Dog();
+        Dog dog2 = new Dog();
 
-        // Using Parameterized Constructor
-        Animal animal2 = new Animal("Buzo"); // This will call the parameterized constructor with the name "Buzo"
+        // Demonstrating IS-A relationship
+        dog.eat();   // Dog can use Animal's eat() method because Dog "IS-A" Animal
+        dog.bark();
+        // Dog's own method
+
+        System.out.println(dog.houseName);
+
+        // Creating an instance of Animal
+        Animal animal = new Animal();
+        animal.eat(); // Animal can only eat, it doesn't have bark method
     }
 }

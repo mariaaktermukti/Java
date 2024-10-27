@@ -1,17 +1,13 @@
-class Animal {
-    String name;
+// Animal.java
+public class Animal {
 
-    // 1. Default Constructor (Java will provide this if we don't define any constructor)
 
-    // 2. No-Argument Constructor (User-Defined)
-    Animal() {
-        System.out.println("Animal created with no-argument constructor!");
+    String houseName = "Nice plazza";
+    void eat() {
+        System.out.println("I am eating");
     }
 
-    // 3. Parameterized Constructor
-    Animal(String animalName) {
-        name = animalName;
-        System.out.println("Animal created with name: " + name);
+    void call(String name){
+        System.out.println("Hello I am calling "+name);
     }
 }
-
