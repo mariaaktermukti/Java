@@ -1,9 +1,10 @@
+
 public class Main {
     public static void main(String[] args) {
-        // Create an Employee object using the constructor
-        Employee emp1 = new Employee(101, "Alice");
+        // Using No-Argument Constructor (User-Defined)
+        Animal animal1 = new Animal(); // This will call the no-argument constructor
 
-        // Display employee info
-        emp1.displayInfo(); // Output: Employee ID: 101, Name: Alice
+        // Using Parameterized Constructor
+        Animal animal2 = new Animal("Buzo"); // This will call the parameterized constructor with the name "Buzo"
     }
 }
