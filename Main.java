@@ -3,7 +3,7 @@ class B extends A{
         System.out.println("b class method");
     }
 }
-class C extends B{
+class C extends A{
     void showC(){
         System.out.println("c clas method");
     }
@@ -20,7 +20,7 @@ class C extends B{
 
         C ob3=new C();
         ob3.showA();
-        ob3.showB();
+//        ob3.showB();
         ob3.showC();
     }
 }
