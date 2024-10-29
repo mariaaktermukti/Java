@@ -1,14 +1,14 @@
-
-public class Main {
-    public static void main(String[] args) {
-        Car myCar = new Car(); // Car IS-A Vehicle
-        myCar.start();         // Inherited from Vehicle
-        myCar.drive();         // Specific to Car
+class B extends A{
+    void showB(){
+        System.out.println("b class method");
     }
-}
-// Main.java
-class Car extends Vehicle {
-    void drive() {
-        System.out.println("Car is driving");
+
+    public static void main(String[] args) {
+        A ob1= new A();
+        ob1.showA();
+
+        B ob2= new B();
+        ob2.showA();
+        ob2.showB();
     }
 }
