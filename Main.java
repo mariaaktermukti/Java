@@ -1,26 +1,12 @@
-class B extends A{
-    void showB(){
-        System.out.println("b class method");
-    }
-}
-class C extends A{
-    void showC(){
-        System.out.println("c clas method");
-    }
-
+// This file contains the main method and uses the Show class
+public class Main {
     public static void main(String[] args) {
-        A ob1=  new A();
-        ob1.showA();
-        System.out.println("--------------------");
+        // Creating an object of the Show class
+        Show show = new Show();
 
-        B ob2= new B();
-        ob2.showA();
-        ob2.showB();
-        System.out.println("--------------------");
-
-        C ob3=new C();
-        ob3.showA();
-//        ob3.showB();
-        ob3.showC();
+        // Calling different versions of the 'display' method
+        show.display(5); // Calls the method that takes one integer
+        show.display("Hello!"); // Calls the method that takes a string
+        show.display(10, 20); // Calls the method that takes two integers
     }
 }
