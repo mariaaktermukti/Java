@@ -4,4 +4,9 @@ public class FancyIO
         char ch= 0x0986; //unicode
         System.out.println(ch);
     }
+    public static void functionA(int x, int y)
+    {
+        int z= x+y;
+        System.out.println(z);
+    }
 }
